@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบทดสอบบุคลิกภาพ</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .results {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e7f3fe;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+        <!-- ให้นักเรียนอ่านข้อความดังต่อไปนี้ แล้วพิจารณาเลือกตัวใดตัวหนึ่งดังต่อไปนี้คือ ชอบ ไม่แน่ใจ และ ไม่ชอบ 
+โดยนักเรียนเลือกที่ตรงกับตัวเองที่สุด การแปลผลคือการดูคะแนนสูงสุดจากผลการทดสอบ คะแนนบุคลิกไหนสูงสุดก็แสดงว่านักเรียนมีบุคลิกภาพหลักแบบนั้น ซึ่งสัมพันธ์กับการเลือกอาชีพในอนาคต ทั้งนี้คะแนนบุคลิกที่รองลงมาก็จะเป็นบุคลิกรอง แต่ในกรณีได้คะแนนเท่ากันสองบุคลิก หรือใกล้เคียงกันหลายแบบ จะแสดงผลว่านักเรียนที่ใกล้เคียงกัน ไม่โดดเด่น แต่มีข้อดีคือสามารถปรับตัวในสังคมได้ดี อยู่ได้ในทุกสภาพแวดล้อม  -->
+        <h1>	แบบทดสอบความสนใจทางอาชีพ John L. Holland</h1>
+	<h2>	กลุ่มสาระการเรียนรู้แนะแนว โรงเรียนมหาวชิราวุธ จังหวัดสงขลา</h2>
+        <h3>พัฒนาเว็บไซต์โดย: นายวรินทร คงแก้ว 
+	คณะครุศาสตร์ สาขาจิตวิทยาฯ มหาวิทยาลัยราชภัฏสงขลา</h3>
+	<p>ที่มาข้อมูล แบบทดสอบนี้พัฒนาขึ้นจากแหล่งข้อมูลต้นฉบับโดย นายฤชุชัย โปธา จัดหางานจังหวัดแม่ฮ่องสอน ใช้เพื่อการศึกษาเท่านั้น</p>
+        <p>คำชี้แจง : ให้นักเรียนอ่านข้อความดังต่อไปนี้ แล้วพิจารณาเลือกตัวใดตัวหนึ่งดังต่อไปนี้คือ 
+ชอบ ไม่แน่ใจ และ ไม่ชอบ</p> 
+
+	<p>โดยเลือกที่ตรงกับตัวเองที่สุด การแปลผลคือการดูคะแนนสูงสุดจากผลการทดสอบ คะแนนบุคลิกไหนสูงสุดก็แสดงว่านักเรียนมีบุคลิกภาพหลักแบบนั้น ซึ่งสัมพันธ์กับการเลือกอาชีพในอนาคต ทั้งนี้คะแนนบุคลิกที่รองลงมาก็จะเป็นบุคลิกรอง แต่ในกรณีได้คะแนนเท่ากันสองบุคลิก หรือใกล้เคียงกันหลายแบบ จะแสดงผลว่านักเรียนที่ใกล้เคียงกัน ไม่โดดเด่น แต่มีข้อดีคือสามารถปรับตัวในสังคมได้ดี อยู่ได้ในทุกสภาพแวดล้อม</p>
+        
+	<p>แบบทดสอบนี้จะช่วยให้นักเรียนเข้าใจบุคลิกภาพ ค่านิยม หรือพรสวรรค์ ความสนใจของนักเรียน และสามารถป็นแนวทางในการประกอบอาชีพ 
+ผ่านการบูรณาการทฤษฎี Trait and Factor Theory ที่มีแนวคิดว่ามนุษย์ใช้วิจารณญาณตัดสินใจเลือกอาชีพโดยอาศัยหลักวิเคราะห์ตนเอง</p>
+    
+	<form id="quizForm">
+        <!-- คำถาม 1 -->
+        <div class="question" data-personality="R">
+            <p>คำถาม 1: ออกกำลังกาย/เล่นกีฬา</p>
+            <label><input type="radio" name="question1" value="3"> ชอบ</label><br>
+            <label><input type="radio" name="question1" value="2"> ไม่แน่ใจ</label><br>
+            <label><input type="radio" name="question1" value="1"> ไม่ชอบ</label>
+        </div>
+
+        <!-- คำถาม 2 -->
+        <div class="question" data-personality="I">
+            <p>คำถาม 2: วิเคราะห์ภาวะเศรษฐกิจ</p>
+            <label><input type="radio" name="question2" value="3"> ชอบ</label><br>
+            <label><input type="radio" name="question2" value="2"> ไม่แน่ใจ</label><br>
+            <label><input type="radio" name="question2" value="1"> ไม่ชอบ</label>
+        </div>
+
+        <!-- คำถาม 3 -->
+        <div class="question" data-personality="S">
+            <p>คำถาม 3: อยากอยู่กับเพื่อนเยอะ ๆ</p>
+            <label><input type="radio" name="question3" value="3"> ชอบ</label><br>
+            <label><input type="radio" name="question3" value="2"> ไม่แน่ใจ</label><br>
+            <label><input type="radio" name="question3" value="1"> ไม่ชอบ</label>
+        </div>
+
+        <div class="question" data-personality="C">
+            <p>คำถาม 4: ทำงานตามตัวอย่างมากกว่าให้คิดเอาเอง</p>
+            <label><input type="radio" name="question4" value="3"> ชอบ</label><br>
+            <label><input type="radio" name="question4" value="2"> ไม่แน่ใจ</label><br>
+            <label><input type="radio" name="question4" value="1"> ไม่ชอบ</label>
+        </div>
+
+        <div class="question" data-personality="E">
+            <p>คำถาม 5: อยากเล่นการเมือง</p>
+            <label><input type="radio" name="question5" value="3"> ชอบ</label><br>
+            <label><input type="radio" name="question5" value="2"> ไม่แน่ใจ</label><br>
+            <label><input type="radio" name="question5" value="1"> ไม่ชอบ</label>
+        </div>
+
+        <div class="question" data-personality="A">
+            <p>คำถาม 6: ชอบอยู่คนเดียว</p>
+            <label><input type="radio" name="question6" value="3"> ชอบ</label><br>
+            <label><input type="radio" name="question6" value="2"> ไม่แน่ใจ</label><br>
+            <label><input type="radio" name="question6" value="1"> ไม่ชอบ</label>
+        </div>
+<div class="question" data-personality="R">
+    <p>คำถาม 7: ออกสำรวจหาข้อมูลผู้ว่างงานในหมู่บ้าน</p>
+    <label><input type="radio" name="question7" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question7" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question7" value="1"> ไม่ชอบ</label>
+</div>
+
+<!-- คำถาม 8 -->
+<div class="question" data-personality="I">
+    <p>คำถาม 8: วิชาวิทยาศาสตร์</p>
+    <label><input type="radio" name="question8" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question8" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question8" value="1"> ไม่ชอบ</label>
+</div>
+
+<!-- คำถาม 9 -->
+<div class="question" data-personality="S">
+    <p>คำถาม 9: นักสังคมสงเคราะห์</p>
+    <label><input type="radio" name="question9" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question9" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question9" value="1"> ไม่ชอบ</label>
+</div>
+
+<!-- คำถาม 10 -->
+<div class="question" data-personality="C">
+    <p>คำถาม 10: เจ้าหน้าที่บันทึกข้อมูล</p>
+    <label><input type="radio" name="question10" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question10" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question10" value="1"> ไม่ชอบ</label>
+</div>
+
+<!-- คำถาม 11 -->
+<div class="question" data-personality="E">
+    <p>คำถาม 11: นักเล่นหุ้น นักเศรษฐศาสตร์ นักธุรกิจ</p>
+    <label><input type="radio" name="question11" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question11" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question11" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="A">
+    <p>คำถาม 12: นักร้อง นักแสดง</p>
+    <label><input type="radio" name="question12" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question12" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question12" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="R">
+    <p>คำถาม 13: เป็นนายช่าง / คนควบคุมการก่อสร้าง</p>
+    <label><input type="radio" name="question13" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question13" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question13" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="I">
+    <p>คำถาม 14: เจ้าหน้าที่วิเคราะห์แผนงานและนโยบาย</p>
+    <label><input type="radio" name="question14" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question14" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question14" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="S">
+    <p>คำถาม 15: เจ้าหน้าที่ฝ่ายบุคคล</p>
+    <label><input type="radio" name="question15" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question15" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question15" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="C">
+    <p>คำถาม 16: พนักงานคลังสินค้าบัญชี</p>
+    <label><input type="radio" name="question16" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question16" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question16" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="E">
+    <p>คำถาม 17: ขายประกัน ขายตรง</p>
+    <label><input type="radio" name="question17" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question17" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question17" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="A">
+    <p>คำถาม 18: นักเขียนการ์ตูน</p>
+    <label><input type="radio" name="question18" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question18" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question18" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="R">
+    <p>คำถาม 19: ผู้จัดการทีม โค้ช</p>
+    <label><input type="radio" name="question19" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question19" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question19" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="I">
+    <p>คำถาม 20: ศึกษาเรื่องยาสมุนไพร</p>
+    <label><input type="radio" name="question20" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question20" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question20" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="S">
+    <p>คำถาม 21: ช่างเสริมสวย</p>
+    <label><input type="radio" name="question21" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question21" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question21" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="C">
+    <p>คำถาม 22: เสมียน ธุรการ</p>
+    <label><input type="radio" name="question22" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question22" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question22" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="E">
+    <p>คำถาม 23: ทำธุรกิจ การค้า</p>
+    <label><input type="radio" name="question23" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question23" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question23" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="A">
+    <p>คำถาม 24: นักประพันธ์เพลง</p>
+    <label><input type="radio" name="question24" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question24" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question24" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="R">
+    <p>คำถาม 25: งานสืบสวน สอบสวน</p>
+    <label><input type="radio" name="question25" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question25" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question25" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="I">
+    <p>คำถาม 26: รับปรึกษาปัญหาต่าง ๆ ให้เพื่อน</p>
+    <label><input type="radio" name="question26" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question26" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question26" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="S">
+    <p>คำถาม 27: ประชาสัมพันธ์โรงแรม</p>
+    <label><input type="radio" name="question27" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question27" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question27" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="C">
+    <p>คำถาม 28: พนักงานธนาคาร</p>
+    <label><input type="radio" name="question28" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question28" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question28" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="E">
+    <p>คำถาม 29: ทนายความ</p>
+    <label><input type="radio" name="question29" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question29" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question29" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="A">
+    <p>คำถาม 30: นักดนตรี</p>
+    <label><input type="radio" name="question30" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question30" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question30" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="R">
+    <p>คำถาม 31: นักแข่งรถ</p>
+    <label><input type="radio" name="question31" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question31" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question31" value="1"> ไม่ชอบ</label>
+</div>
+	
+<div class="question" data-personality="I">
+    <p>คำถาม 32: นักเพาะเลี้ยงปลาสวยงาม</p>
+    <label><input type="radio" name="question32" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question32" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question32" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="S">
+    <p>คำถาม 33: ครู อาจาร์ย</p>
+    <label><input type="radio" name="question33" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question33" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question33" value="1"> ไม่ชอบ</label>
+</div>
+<div class="question" data-personality="C">
+    <p>คำถาม 34: เลขานุการ</p>
+    <label><input type="radio" name="question34" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question34" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question34" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="E">
+    <p>คำถาม 35: พิธีกร</p>
+    <label><input type="radio" name="question35" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question35" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question35" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="A">
+    <p>คำถาม 36: สถาปนิก</p>
+    <label><input type="radio" name="question36" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question36" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question36" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="R">
+    <p>คำถาม 37: ช่างซ่อมบำรุง</p>
+    <label><input type="radio" name="question37" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question37" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question37" value="1"> ไม่ชอบ</label>
+</div>
+
+
+<div class="question" data-personality="I">
+    <p>คำถาม 38: ชอบสะสมของเก่า</p>
+    <label><input type="radio" name="question38" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question38" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question38" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="S">
+    <p>คำถาม 39 : ช่วยเหลือคนบาดเจ็บ</p>
+    <label><input type="radio" name="question39" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question39" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question39" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="C">
+    <p>คำถาม 40 : พนักงานสินเชื่อ เจ้าหน้าที่การเงิน</p>
+    <label><input type="radio" name="question40" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question40" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question40" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="E">
+    <p>คำถาม 41: เป็นตัวแทนโต้วาทีของโรงเรียน</p>
+    <label><input type="radio" name="question41" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question41" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question41" value="1"> ไม่ชอบ</label>
+</div>
+
+
+<div class="question" data-personality="A">
+    <p>คำถาม 42: ผู้เรียบเรียงเสียงประสาน</p>
+    <label><input type="radio" name="question42" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question42" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question42" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="R">
+    <p>คำถาม 43: ช่างเครื่องกล ช่างยนต์</p>
+    <label><input type="radio" name="question43" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question43" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question43" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="I">
+    <p>คำถาม 44: เปิดร้านขายยา</p>
+    <label><input type="radio" name="question44" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question44" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question44" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="S">
+    <p>คำถาม 45: นักจัดรายการวิทยุ</p>
+    <label><input type="radio" name="question45" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question45" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question45" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="C">
+    <p>คำถาม 46: เจ้าหน้าที่ห้องสมุด</p>
+    <label><input type="radio" name="question46" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question46" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question46" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="E">
+    <p>คำถาม 47: กำนัน ผู้ใหญ่บ้าน อบต.</p>
+    <label><input type="radio" name="question47" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question47" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question47" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="A">
+    <p>คำถาม 48: นายแบบ นางแบบ</p>
+    <label><input type="radio" name="question48" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question48" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question48" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="R">
+    <p>คำถาม 49: ทหาร ตำรวจปราบปราม</p>
+    <label><input type="radio" name="question49" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question49" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question49" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="I">
+    <p>คำถาม 50: นักเขียนโปรแกรมคอมพิวเตอร์</p>
+    <label><input type="radio" name="question50" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question50" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question50" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="S">
+    <p>คำถาม 51: พระสงฆ์ บาทหลวงสอนศาสนา</p>
+    <label><input type="radio" name="question51" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question51" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question51" value="1"> ไม่ชอบ</label>
+</div>
+
+
+<div class="question" data-personality="C">
+    <p>คำถาม 52: พนักงานรักษาความปลอดภัย</p>
+    <label><input type="radio" name="question52" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question52" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question52" value="1"> ไม่ชอบ</label>
+</div>
+
+<div class="question" data-personality="E">
+    <p>คำถาม 53: ศาล ผู้พิพากษา</p>
+    <label><input type="radio" name="question53" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question53" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question53" value="1"> ไม่ชอบ</label>
+</div>
+
+
+
+<div class="question" data-personality="A">
+    <p>คำถาม 54: นักข่าว</p>
+    <label><input type="radio" name="question54" value="3"> ชอบ</label><br>
+    <label><input type="radio" name="question54" value="2"> ไม่แน่ใจ</label><br>
+    <label><input type="radio" name="question54" value="1"> ไม่ชอบ</label>
+</div>
+
+        <button type="button" onclick="calculateScore()">ส่งแบบทดสอบ</button>
+</form>
+
+<div id="result" class="results"></div>
+
+<script>
+function calculateScore() {
+    // สร้างตัวแปรเก็บคะแนนของแต่ละบุคลิกภาพ
+    const scores = {
+        R: 0, // Realistic
+        I: 0, // Investigative
+        S: 0, // Social
+        C: 0, // Conventional
+        E: 0, // Enterprising
+        A: 0  // Artistic
+    };
+
+    // สร้างวัตถุเก็บคำแปลผลของบุคลิกภาพแต่ละประเภท, อาชีพที่เหมาะสม และลักษณะเด่น
+    const personalityDescriptions = {
+        R: {
+            result: "บุคลิกภาพ Realistic (R): คนที่มีบุคลิกภาพประเภทนี้จะเน้นการใช้วิธีการที่เป็นรูปธรรม มีความชอบในงานที่ต้องใช้ทักษะทางกายภาพหรือเครื่องมือในการแก้ปัญหา",
+            personality: "คนกลุ่มนี้มักจะมีความกระตือรือร้นในการทำงานที่มีการใช้เครื่องมือหรือเทคโนโลยี พวกเขามักจะชอบทำงานที่จับต้องได้และเห็นผลทันที",
+            careers: ["วิศวกร", "ช่างซ่อม", "เกษตรกร", "ช่างไฟฟ้า", "นักขับรถ", "ช่างไม้", "ผู้เชี่ยวชาญด้านเครื่องจักร", "ช่างก่อสร้าง"]
+        },
+        I: {
+            result: "บุคลิกภาพ Investigative (I): คนที่มีบุคลิกภาพประเภทนี้มักจะชอบการคิดวิเคราะห์และการค้นคว้า มักจะสนใจในวิทยาศาสตร์และการแก้ปัญหาที่ซับซ้อน",
+            personality: "มักจะชอบการหาคำตอบในเรื่องที่ซับซ้อน พวกเขาชอบทำงานกับข้อมูล และสามารถคิดวิเคราะห์ได้ลึกซึ้ง",
+            careers: ["นักวิจัย", "นักวิทยาศาสตร์", "นักคณิตศาสตร์", "นักฟิสิกส์", "นักวิจัยทางการแพทย์", "นักพัฒนาโปรแกรม", "ผู้เชี่ยวชาญด้านข้อมูล"]
+        },
+        S: {
+            result: "บุคลิกภาพ Social (S): คนที่มีบุคลิกภาพประเภทนี้มักชอบทำงานร่วมกับผู้อื่น ช่วยเหลือและทำกิจกรรมที่เกี่ยวข้องกับการสื่อสารและการทำงานเป็นทีม",
+            personality: "คนกลุ่มนี้มักจะมีทักษะในการสื่อสารและการทำงานร่วมกับผู้อื่น พวกเขาให้ความสำคัญกับการช่วยเหลือและการสร้างความสัมพันธ์ที่ดี",
+            careers: ["ครู", "นักจิตวิทยา", "พยาบาล", "ผู้ดูแลเด็ก", "เจ้าหน้าที่สังคม", "ที่ปรึกษา", "โค้ช", "ผู้จัดการโครงการ"]
+        },
+        C: {
+            result: "บุคลิกภาพ Conventional (C): คนที่มีบุคลิกภาพประเภทนี้มักจะชอบทำงานที่มีโครงสร้างชัดเจน ชอบงานที่มีขั้นตอนและระเบียบ",
+            personality: "พวกเขาชอบความเรียบร้อยและระเบียบ มักจะมีความสามารถในการจัดการและทำงานที่ต้องการความแม่นยำสูง",
+            careers: ["นักบัญชี", "นักการเงิน", "เจ้าหน้าที่บุคคล", "ผู้จัดการฝ่ายทรัพยากรบุคคล", "นักวางแผน", "เจ้าหน้าที่ธนาคาร", "นักบริหาร"]
+        },
+        E: {
+            result: "บุคลิกภาพ Enterprising (E): คนที่มีบุคลิกภาพประเภทนี้มีความมั่นใจและชอบการตัดสินใจ พวกเขามักจะทำงานในธุรกิจหรือการเป็นผู้นำ",
+            personality: "พวกเขามักมีความมั่นใจในตนเองและกล้าตัดสินใจ รักการเป็นผู้นำและการริเริ่มกิจการใหม่ๆ",
+            careers: ["นักธุรกิจ", "ผู้ประกอบการ", "ผู้จัดการ", "ผู้นำทีม", "เจ้าของร้าน", "นักการตลาด", "ผู้จัดงาน", "ที่ปรึกษาทางธุรกิจ"]
+        },
+        A: {
+            result: "บุคลิกภาพ Artistic (A): คนที่มีบุคลิกภาพประเภทนี้มักจะมีความคิดสร้างสรรค์และชอบงานที่มีความเป็นศิลปะ หรือกิจกรรมที่ให้โอกาสแสดงออกทางความคิดและการสร้างสรรค์",
+            personality: "พวกเขามีความคิดสร้างสรรค์สูง และมักจะชอบแสดงออกผ่านการทำงานศิลปะหรือการออกแบบต่างๆ",
+            careers: ["นักออกแบบ", "ศิลปิน", "นักเขียน", "นักดนตรี", "นักแสดง", "นักถ่ายภาพ", "นักออกแบบกราฟิก", "นักโฆษณา"]
+        }
+    };
+
+    // ดึงข้อมูลคำถามทั้งหมด
+    const questions = document.querySelectorAll('.question');
+
+    // วนลูปผ่านคำถามทั้งหมดเพื่อคำนวณคะแนน
+    questions.forEach(question => {
+        const personality = question.getAttribute('data-personality');
+        const selectedOption = question.querySelector('input[type="radio"]:checked');
+
+        // ตรวจสอบว่ามีตัวเลือกที่ถูกเลือกหรือไม่
+        if (selectedOption) {
+            const score = parseInt(selectedOption.value);
+            scores[personality] += score;
+        }
+    });
+
+    // แสดงผลคะแนน
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `
+        <h2>ผลการทดสอบ</h2>
+        <p>Realistic (R): ${scores.R} คะแนน</p>
+        <p>Investigative (I): ${scores.I} คะแนน</p>
+        <p>Social (S): ${scores.S} คะแนน</p>
+        <p>Conventional (C): ${scores.C} คะแนน</p>
+        <p>Enterprising (E): ${scores.E} คะแนน</p>
+        <p>Artistic (A): ${scores.A} คะแนน</p>
+    `;
+
+    // หาบุคลิกภาพที่มีคะแนนสูงสุด
+    const highestScore = Math.max(...Object.values(scores));
+    const dominantPersonality = Object.keys(scores).filter(key => scores[key] === highestScore);
+
+    resultDiv.innerHTML += `<p>บุคลิกภาพหลักของคุณคือ: ${dominantPersonality.join(', ')}</p>`;
+
+    // แสดงคำแปลผล, ลักษณะบุคลิกภาพ และอาชีพที่เหมาะสมสำหรับบุคลิกภาพที่มีคะแนนสูงสุด
+    dominantPersonality.forEach(personality => {
+        resultDiv.innerHTML += `<p><strong>${personalityDescriptions[personality].result}</strong></p>`;
+        resultDiv.innerHTML += `<p><strong>ลักษณะบุคลิกภาพ:</strong> ${personalityDescriptions[personality].personality}</p>`;
+        resultDiv.innerHTML += `<p><strong>อาชีพที่เหมาะสม:</strong> ${personalityDescriptions[personality].careers.join(', ')}</p>`;
+    });
+}
+</script>
+
+</body>
+</html>
+
